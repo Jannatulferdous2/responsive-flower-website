@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Responsive Flower Website Design</title>
+  <link rel="stylesheet" href="styles/styles.css">"
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
@@ -13,6 +14,7 @@
    .inters {
       font-family: 'Inter', sans-serif;
     }
+
 .spin-on-hover:hover {
       animation: spin 3s linear infinite;
     }
@@ -25,13 +27,13 @@
   </style>
 </head>
 
-<body class="bg-white text-[#252432]">
+<body class="bg-[#fefbff] text-[#dfdfe6] ">
   
   <header class="container mx-auto px-[150px] py-6">
     <!-- Navbar -->
     <nav class="flex flex-col sm:flex-row justify-between items-center">
       <div class="-mb-5  sm:mb-2">
-        <img class="max-w-[120px]" src="assets/logo.png" alt="" />
+        <img class="sm:max-w-[120px]" src="assets/logo.png" alt="" />
       </div>
 
       <ul class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
@@ -39,19 +41,19 @@
         <li class="font-normal text-[#8987A1] hidden sm:block">Shop</li>
         <li class="font-normal text-[#8987A1] hidden sm:block">About Us</li>
 
-        <div class="flex items-center gap-2">
-          <img class="w-6 h-6" src="assets/card.png" alt="" />
-          <li class="text-black font-medium">Cart ($56)</li>
+        <div class=" flex items-center gap-2">
+          <img class="sm:w-5 sm:h-5" src="assets/card.png" alt="" />
+          <li class="text-black sm:font-medium">Cart ($56)</li>
         </div>
       </ul>
     </nav>
 
     <!-- text-Section -->
-    <div class="flex flex-col-reverse lg:flex-row items-center justify-between mt-10 gap-10 lg:gap-20 max-w:[576px]">
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-between mt-10 gap-10 lg:gap-20 lg:max-w:[576px]">
       <!-- Section -->
       <div class="text-center lg:text-left max-w-[576px] font-bold ">
          
-             <h2 class="sm:text-5xl text-4xl leading-tight "><span class="font-black">ALWAYS </span><span class="text-[#E95A08]">FRESH <br>FLOWERS</span> </h2>
+             <h2 class="sm:text-5xl text-4xl leading-tight "><span class="text-black">ALWAYS </span><span class="text-[#E95A08]">FRESH <br>FLOWERS</span> </h2>
              <p class="text-[#929191]  mt-4 font-normal sm:text-lg inter-normal text-nowrap">
                Indulge your senses with the beauty and fragrance of <br>our fresh flower shop. From classic roses to exotic<br>blooms, we offer a wide variety of fresh flowers that<br> are perfect for any occasion. 
             </p>
@@ -67,9 +69,9 @@
     <section class="py-5 mb-24">
     <div class="container mx-auto px-3">
         <!-- banner-title-->
-    <div class="container items-center lg:text-left max-w-[576px] font-bold  mx-auto py-4">
-        <h2 class=" sm:text-5xl lg:text-5xl text-center"><span class="text-[#E95A08]">Our</span> Plants</h2>
-        <p class="sm:text-[12px] py-3 text-center text-[#929191] mx-auto max-w-2xl" >Indulge your senses with the beauty and fragrance of our fresh flower shop.From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <div class="container items-center lg:text-left text-center font-bold  mx-auto py-4">
+        <h2 class=" sm:text-5xl lg:text-5xl text-center text-black"><span class="text-[#E95A08]">Our</span> Plants</h2>
+        <p class="sm:text-2xl py-3 text-center  text-[#929191] mx-auto max-w-5xl" >Indulge your senses with the beauty and fragrance of our fresh flower shop.From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
     </div>
     <!--card parent-->
 <div  class="grid grid-cols-1 border-8 relative sm:grid-cols-2 lg:grid-cols-4  gap-8 ">  
@@ -209,19 +211,117 @@
               -mr-56 text-center spin-on-hover cursor-pointer transition-all duration-300"/>
       </div>
 
-      <!-- Text Content -->
-      <div>
-        <h2 class="text-4xl sm:text-5xl font-extrabold mb-6">Flower & Plants Lover</h2>
+      <!-- text Content -->
+      <div class=" lg:text-4xl sm:text-5xl">
+        <h2 class="text-6xl text-black  font-extrabold mb-6">Flower & Plants Lover</h2>
         <ul class="inters list-disc list-inside text-gray-700 space-y-4 text-lg">
-          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop.</li>
+          <li>Indulge your sense with the beauty and fragrance of our fresh flower shop.</li>
           <li>From classic roses to exotic blooms, we offer a wide variety of fresh plants.</li>
           <li>Perfect for any celebration or to brighten up your everyday space.</li>
     </ul>
 </div>
 </section>
 
-</main>
+<div class=" rounded-6xl items-center bg-cover relative space-x-1 w-full ">    
+           <!-- Latest  Deals-title-->
+    <div class="container items-center lg:text-left text-center   mx-auto pt-11 my-10">
+        <h2 class=" sm:text-5xl lg:text-5xl text-center font-bold text-black"><span class="text-[#E95A08]">Latest </span> Deals</h2>
+        <p class="sm:text-2xl py-3 text-center  text-[#929191] mx-auto max-w-5xl" >Indulge your senses with the beauty and fragrance of our fresh flower shop.From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    </div>
+   
+<!--plant parent-->
+<div class=" flex flex-row gap-0 items-center justify-evenly ">
+    <!--bloom Plant-->
 
+<div class="  space-y-3 space-x-0">
+       <div class="bg-[url('assets/deal-bloom.png')] text-center w-[367px] h-[206px] bg-no-repeat bg-cover bg-center rounded-lg overflow-hidden relative">
+         <h3 class=" text-white font-extrabold text-3xl pt-12  ">30% Off | Ana Plant</h3>
+   
+  
+        <button class="underline text-[18px] font-medium"><a href="">Shop Now</a></button> 
+</div>
+      
+      <!--Ana Plant-->
+
+
+ <div class="bg-[url('assets/deal-ana.png')]  text-center w-[367px] h-[206px] bg-no-repeat bg-cover bg-center rounded-lg overflow-hidden relative">
+       
+         <h3 class="text-white font-extrabold text-3xl pt-12">30% Off | Ana Plant</h3>
+
+         <button class="underline text-[18px] font-medium "><a href="">Shop Now</a></button> 
+</div>
+      </div>
+   <!--zabo-Plant-->
+      
+     <div class=" flex sm-gap-20px text-center py-50  items-center bg-no-repeat bg-cover ">
+    <div class="bg-[url('assets/deal-zabo.png')] w-[753px] h-[423px] bg-no-repeat bg-cover bg-center rounded-lg overflow-hidden relative ">
+      <h3 class="text-white text-center pt-50  font-extrabold text-4xl "> 25% Off | Zabo Plant </h3>
+
+          <button class="underline text-[18px]  text-center text-amber-100 font-medium "><a href="">Shop Now</a></button> 
+
+      </div>
+
+     </div>
+  </div>  
+ 
+
+<section class="text-center">
+   
+  <div class="bg-[url('assets/news-letter-bg.png')] h-[540px]  sm:m-0 sm:p-0  mx-auto">
+  <h2 class="text-6xl text-center text-white font-bold">Join the colorful Bunch</h2> 
+  <input class="bg-white text-gray-800 sm:w-[830px] sm:h-[50px]" type="text " placeholder="Write Email"> 
+  <button class="bg-amber-600 sm:w-[186px] sm:h-[50px] text-white"><a href="">Subscribe</a></button>
+
+         
+              
+                
+    
+
+  </div>
+</section>
+   
+
+</main>
+<footer class="grid grid-cols-4  sm:container items-center justify-between w-[1120px] h-[348px] m-[50px] my-[160px] gap-x-[122px] ">
+  <div class="-mb-5  sm:mb-2">
+        <img class="sm:max-w-[130px] h-[82px]" src="assets/logo.png" alt="" />
+        <p class="inter text-2xl text-black ">Indulge your senses with the<br> beauty and fragrance of our fresh<br> flower shop.</p>
+      </div>
+    
+      <div class=" text-black">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      
+<div class=" text-black">
+        <ul>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Help Center</li>
+        </ul>
+    </div>
+
+        <ul class="sm:flex items-center pt-[10]  justify-between ">
+          <a href="#"><img src="assets/icon-twitter.png" alt="twitter"></a>
+          <a href="#"><img src="assets/icon-youtube.png" alt="youtube"></a>
+          <a href="#"><img src="assets/icon-linkedin.png" alt="linkedin"></a>
+          <a href="#"><img src="assets/icon-facebook.png" alt="facebook"></a>
+        
+        </ul>
+    </div>
+
+
+
+      
+
+</footer>
 
 </body>
 </html>
